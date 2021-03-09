@@ -1,0 +1,56 @@
+<html>
+    <title>External Style</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    </head>
+    <h1 style="text-align: center;
+    color: rgb(6, 4, 110);
+    font-size: 60pt;
+    font-family: cursive;">
+    <script>
+        function checkForm()
+        {
+            var name;
+            name=document.getElementById("txtName").value;
+            if(name == "")
+            {
+                window.alert("name is required.");
+            }
+            window.alert("name:" + name);
+        }
+    </script>
+<div class="container">
+<form
+action="action_page.php">
+<label for="fname">first Name</label>
+<input type="text"
+id="fname" name="firstname"
+placeholder="your name..">
+<label for="lname">Last Name</label>
+<input type="text"
+id="lname" name="lastname"
+placeholder="Your Last Name..">
+<label
+for="country">Country</label>
+<select id="country"
+name="country">
+<option 
+value="United States">United States</option>
+<option
+value="Canada">Canada</option>
+<option
+value="Mexico">Mexico</option>
+</select>
+<label
+for="subject">Subject</label>
+<textarea id="subject"
+name="subject"
+placeholder="write something.."
+style="height:200px">
+</textarea>
+<input type="submit"
+value="Submit">
+</form>
+</div>
+
+</html>
